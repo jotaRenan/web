@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trabalho WEB</title>
+	<meta charset="utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="trabStyle.css">
+	<script type="text/javascript" src="trabStyle.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="trab">
+
+			<h1>DOM Style Object - João Pedro Renan</h1>
+
+			<h2>Propriedade Filter</h2>
+			<p>A propriedade de CSS <b>filter</b> provê efeitos como desfoque, mudança de cores e outras mudanças visuais em elementos como imagens.</p>
+			<p style="text-align:center;"><button type="button" id="bFiltros">Ativar filtros</button></p>
+			<div id="pFilter">
+				<div class="conteudo-flex">
+					<figure>
+						<img src="20160423_203427.png" alt="Imagem Original">
+						<figcaption>Imagem Original</figcaption>
+					</figure>
+				</div>
+				<div class="conteudo-flex">
+					<figure>
+						<img src="20160423_203427.png" alt="Filtro Desfoque">
+						<figcaption>Filtro de desfoque</figcaption>
+					</figure>
+				</div>
+				<div class="conteudo-flex">
+					<figure>
+						<img src="20160423_203427.png" alt="Filtro Sepia">
+						<figcaption>Filtro sépia</figcaption>
+					</figure>
+				</div>
+			</div>
+			
+			<div>
+				<h2>Propriedade Flex</h2>
+				<p>A propriedade de abreviação de estilo <b>flex</b> é responsável por editar, de forma rápida, as propriedades <b>'flex-grow'</b>, <b>'flex-shrink'</b> e <b>'flex-basis'</b> de um elemento. Ela só pode ser aplicada à elementos filhos de elementos com a propriedade <b>display: flex</b>. Essa propriedade de abreviação segue a seguinte sintaxe:</p>
+
+				<pre style="font-size: 1.5em;"><p style="text-align: center;">flex : &lt;flex-grow&gt; &lt;flex-shrink&gt; &lt;flex-basis&gt;</p></pre>
+
+				<p>Na implementação, os itens dentro de tags devem ser substituídos pelo valor desejado para cada item.</p>
+				<p>As caixas abaixo servirão de exemplo para as quatro propriedades flex a serem apresentadas nesse trabalho.
+
+					<div id="pFlex">
+						<div style="background-color: coral;">VERMELHO</div>
+						<div style="background-color:lightblue;">AZUL</div>  
+						<div style="background-color: lightgreen;">Divisao verde, na qual há mais conteúdo.
+						</div>
+					</div>
+					<div id="exp">
+						<div>
+							<h2>Display Flex</h2>
+							<p>É necessário que o a propriedade <b>display</b> esteja com o atributo <b>'flex'</b> para que as propriedades do tipo flex funcionem. É possivel ligar e desligar o modo flex através do botão abaixo. Note como distribuição de espaço entre as divisões se alteram e perdem a proporção quando <b>flex</b> está desativado.</p>
+							<button type="button" id="toggleFlex">Alternar propriedade Flex</button>
+
+							<h2>Flex Basis</h2>
+							<p><b>Flex-basis</b> é a propriedade que define o tamanho inicial de uma divisão flex. Por padrão, o exemplo acima tem <b>flex-basis</b> em valor <i>auto</i>. O botão abaixo alterna esse valor entre <i>auto</i> e <i>150px</i>.</p>
+							<button type="button" id="flexBasis">Alterar Flex-Basis da area azul</button>
+						</div>
+						<div>
+							<h2>Flex Direction</h2>
+							<p>Como o próprio nome indica, <b>flex-direction</b> define a direção que as divisões se apresentam na divisão-pai. Por padrão, o exemplo começa com valor <i>row</i>. O botão abaixo alterna a propriedade entre <i>row</i> e <i>column</i>.</p>
+							<button type="button" id="flexDir">Alterar Flex-Direction</button>
+
+							<h2>Flex Grow</h2>
+							<p>A propriedade <b>flex-grow</b> define o quanto uma divisão deve <i>crescer</i> em relação às outras divisões do mesmo container. No exemplo, inicialmente todas as visisões estão com <b>flex-grow:</b> <i>1</i>. O botão abaixo alterna o valor da divisória do meio entre <i>1</i> e <i>1.5</i>. No valor <i>1.5</i>, tal divisória tem uma vez e meia a largura das divisórias com <b>flex-grow:</b> <i> 1</i>.</p>
+							<button type="button" id="flexGrow">Alterar Flex-Grow</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</body>
+</html>
